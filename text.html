@@ -19,6 +19,17 @@
     <p id="arr"></p>
     <p id="obj"></p>
     <p id="datetime"></p>
+    <div>VS hacks
+        #use alt+up for moving lines up and alt+down for moving lines down
+        #use ctrl+alt+up for multiple cursors 
+        #use alt+left click for desired place cursors
+        #use ctrl+shift+k to delete the entire line
+        #use ctrl+/ for comment
+        #use ctrl+b to collapse/expand the side bar
+        #use ctrl+\ for the split view
+        #use ctrl+split_number to switch between the split screens
+        #use shift+alt+up or down to copy the lines up or down
+    </div>
     <img src="C:\Users\saiki\Downloads\shopping-cart3.png" id="image" />
         <button type="button" onclick="document.getElementById('start').innerHTML='Javascript Tutorial Lets go'">CHange text</button>
         <button type="button" onclick="document.getElementById('start').style.color='aqua'">Change color</button>
@@ -28,13 +39,13 @@
         <!--Output statements-->
         <script>
             //===================================================================================================
-            //document.write("This deletes the existing file and writes content into it");//used only for testing
+            document.write("This deletes the existing file and writes content into it");//used only for testing
             window.alert(10+20);//creates the alert box
             console.log("THis is created using console.log");//can be used in browsers
 
             //=========================================================================================================
            {
-             let a,b;//variable declaration can be done with const(value doesnt change),var,let
+            let a,b;//variable declaration can be done with const(value doesnt change),var,let
             var c;//You cannot re-declare a variable declared with let or const while var can
             //redeclaring a variable with let in same block not allowed,in another block allowed
             a = 10;
@@ -77,7 +88,7 @@
 
             //datatypes are string,number,boolean,bigint,undefined,null,object,symbol 
             //javascript evaluates the expressions from left to right
-            {
+        {
             let comb1 = 'hello world'+ 1 + 2;//ans: helloworld12
             let comb2 = 1 + 2 + 'helloworld' //ans: 3helloworld
             const array1 = ['audi','BMW','Tesla','Ferrari','volksvagen']
@@ -85,8 +96,10 @@
             const datetime1 = new Date('2023-01-19')
             document.getElementByID('arr').innerHTML=array1;
             document.getElementByID('obj').innerHTML=object1;
-            document.getElementByID('datetime').innerHTML=datetime1;}
+            document.getElementByID('datetime').innerHTML=datetime1;
+        }
         </script>
+
 
 </body>
 
