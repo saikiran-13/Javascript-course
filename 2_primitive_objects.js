@@ -13,9 +13,9 @@ console.log(typeof(e))//TO check the type of the data
 //Objects --> Non-primitive data types,key-value pairs,associative array,kinda dictionaries in python
 const marvel={"Captain-America":"steve rogers","Ironman":"RDJ","Avengers":6,"Thanos":undefined}
 const college={name:"parul",branch:"cse",caption:"Be here Be Vibrant",state:"Gujarat"}
-console.log(marvel["Ironman"],marvel["Avengers"])
+console.log(marvel["Ironman"],marvel.Avengers)//access an value using 2 ways by [] or .
 console.log("before adding and chaging key value pairs...   ",marvel)
-marvel["spiderman"]="tom maguire"
+marvel["spiderman"]="tom maguire"//adding and changing some content in the object
 marvel["hawkeye"]=12
 console.log()
 //there will be no error in const marvel because by using const it acts as reference to the object marvel so u can change key-value pairs
