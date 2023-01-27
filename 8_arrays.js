@@ -56,3 +56,4 @@ console.log(arr3)
 
 let slice_array = arr3.slice(2,7)//creates the subarray of original array starting from the index 2 till index 6
 console.log("new slice Array is ",slice_array)
+
