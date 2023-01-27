@@ -2,7 +2,7 @@ let age = "45"
 console.log(typeof (age))
 age = Number.parseInt(age)//type casting converting string to number
 console.log(typeof (age))
-
+//prompt doesnt work in node
 //if elseif else
 if (age > 5 && age < 10) {
     console.log("You are a kid")
@@ -16,6 +16,9 @@ else if (age > 18) {
 else {
     console.log("invalid data")
 }
+
+//Ternary operator
+console.log("You can ",age<18?"cannot vote":"vote")
 
 //switch statements
 const day = 4
