@@ -2,7 +2,7 @@ let age = "45"
 console.log(typeof (age))
 age = Number.parseInt(age)//type casting converting string to number
 console.log(typeof (age))
-//prompt doesnt work in node
+//prompt doesnt work in node u can run this in browser console,html document etc...
 //if elseif else
 if (age > 5 && age < 10) {
     console.log("You are a kid")
