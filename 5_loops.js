@@ -33,3 +33,33 @@ let x=10
 do {
     console.log("the value of x is",x)
 } while (x>10);
+
+//creating student marks as object and printing results of each student using a function
+const marks = {
+    saikiran:9,
+    revanth:9.2,
+    prabhu:8.8,
+    bhaskar:8.9
+}
+const find_results = (mark)=>{
+    return marks[mark]
+}
+
+for(let i=0;i<Object.keys(marks).length;i++){
+    console.log("The marks scored by "+Object.keys(marks)[i]+" is "+ marks[Object.keys(marks)[i]]+" by using for loop")
+
+}
+
+for(let mark in marks){//priniting using for in loop
+    console.log("The marks scored by "+mark+" is "+ find_results(mark))
+}
+
+/*
+//try to run in the console this will continously run until u execute the correct number
+let correct_num = 156
+let i = prompt("enter the correct number")
+while(i!=correct_num){
+    i=prompt("The number is invalid enter the correct num")
+}
+console.log("you have entered the correct number")
+*/
