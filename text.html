@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function amazing(){
+            document.getElementById("image").style.display="block";
+        }
+    </script>
+</head>
+<!--Javascript can be written in 3 ways inside head or body or external file.js and link it using src inside script file-->
+<body>
+    <p id="start">"THis is javascript tutorial</p>
+    <p id = "variables"></p>
+    <p id="arr"></p>
+    <p id="obj"></p>
+    <p id="datetime"></p>
+    <div>VS hacks
+        #use alt+up for moving lines up and alt+down for moving lines down
+        #use ctrl+alt+up for multiple cursors 
+        #use alt+left click for desired place cursors
+        #use ctrl+shift+k to delete the entire line
+        #use ctrl+/ for comment
+        #use ctrl+b to collapse/expand the side bar
+        #use ctrl+\ for the split view
+        #use ctrl+split_number to switch between the split screens
+        #use shift+alt+up or down to copy the lines up or down
+    </div>
+    <img src="C:\Users\saiki\Downloads\shopping-cart3.png" id="image" />
+        <button type="button" onclick="document.getElementById('start').innerHTML='Javascript Tutorial Lets go'">CHange text</button>
+        <button type="button" onclick="document.getElementById('start').style.color='aqua'">Change color</button>
+        <button type="button" onclick="document.getElementById('image').style.display='none'">Change opacity</button> 
+        <button onclick="amazing()">Click Here</button>
+
+        <!--Output statements-->
+        <script>
+            //===================================================================================================
+            document.write("This deletes the existing file and writes content into it");//used only for testing
+            window.alert(10+20);//creates the alert box
+            console.log("THis is created using console.log");//can be used in browsers
+
+            //=========================================================================================================
+           {
+            let a,b;//variable declaration can be done with const(value doesnt change),var,let
+            var c;//You cannot re-declare a variable declared with let or const while var can
+            //redeclaring a variable with let in same block not allowed,in another block allowed
+            a = 10;
+            b = 10;
+            var c = a * b;
+            const pi=3.14;
+            document.getElementById('variables').innerHTML="THe total output is : " + c + d;
+            //let have the block scope i.e.,access within the block {},but var, it is global access outside of block(value change global)
+
+            /*A JavaScript name must begin with:
+            A letter (A-Z or a-z)
+            A dollar sign ($)
+            Or an underscore (_)
+            Subsequent characters may be letters, digits, underscores, or dollar signs.*/
+
+            /*Use const when you declare:
+            A new Array
+            A new Object
+            A new Function
+            A new RegExp*/
+            //=======================================================================================================================
+
+            //Arithmetic,assignment,bitwise,logical,type,comparision operators
+            //bitwise
+            /*
+            &	AND	5 & 1	0101 & 0001	0001	 1
+            |	OR	5 | 1	0101 | 0001	0101	 5
+            ~	NOT	~ 5	 ~0101	1010	 10
+            ^	XOR	5 ^ 1	0101 ^ 0001	0100	 4
+            <<	left shift	5 << 1	0101 << 1	1010	 10
+            >>	right shift	5 >> 1	0101 >> 1	0010	  2
+            >>>	unsigned right shift	5 >>> 1	0101 >>> 1	0010	  2
+            */
+            let x = 5;
+            x += 5;
+            x **= 5;
+            document.write(x);
+        }
+            //=======================================================================================================================
+
+            //datatypes are string,number,boolean,bigint,undefined,null,object,symbol 
+            //javascript evaluates the expressions from left to right
+        {
+            let comb1 = 'hello world'+ 1 + 2;//ans: helloworld12
+            let comb2 = 1 + 2 + 'helloworld' //ans: 3helloworld
+            const array1 = ['audi','BMW','Tesla','Ferrari','volksvagen']
+            const object1 = {name:'sai kiran',age:'21',enroll_no:'156',college:'Parul University'}
+            const datetime1 = new Date('2023-01-19')
+            document.getElementByID('arr').innerHTML=array1;
+            document.getElementByID('obj').innerHTML=object1;
+            document.getElementByID('datetime').innerHTML=datetime1;
+        }
+        </script>
+
+
+</body>
+
+</html>
