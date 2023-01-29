@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Window object is a global object and represents browser window and provides a wide variety of methods to control it-->
+    <!--3 topics: DOM(doucment object model),BOM(Browser object model),javascript core
+    1.DOM takes your HTML page and converts it into a javascript object and named it as Document as document tree
+    2.BOM represents the additional objects provided by the browser everything except the document ex:prompt,confirm,alert etc..
+    that's why these ex work in browser, not on local device ex;clicks a button redirect to stackoverflow etc..  -->
+
+    <script>
+        //u can change the html elments,css styles using js say user entered green the background color converted to green 
+        //dynamically changing feature not present in css styling
+        console.log(window)//shows the methods of the window object
+        console.log(document)//shows how our html is documented
+        color = prompt("enter the color")
+        document.body.style.backgroundColor = color//changing background color of the webpage
+        age = prompt("enter your age ")
+        ans = confirm("Do you wanna see the prompt againa?")
+        if(ans)
+        {
+            prompt("Here again for you")
+        }
+        else{
+            console.error("Something went wrong..")
+        }
+        let num = prompt("Enter a random number: ")
+        if(num<10){
+            location.href = "https://www.youtube.com/@akshaymarch7/playlists"
+        }
+        
+    </script>
+
+
+
+</body>
+
+</html>

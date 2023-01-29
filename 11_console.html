@@ -1,0 +1,51 @@
+<!-- Console object has so many methods ;
+log,error,info,assert,clear,table,warning,time,timeEnd -->
+<!-- after running this code in browser click on inspect and check in console to get  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="console.png" width="20%" height="40%">
+    <script>
+        //prompt,alert and confirm box 
+        //avoid using these in frontend apps disadvantage is pause execution until window is dismisseds
+        let name = prompt("Enter your name","sai")//takes input from the user by default it is sai
+        let age = prompt("enter your age ")
+        age = Number.parseInt(age)
+        if(age<18){
+            alert("your are not eligible to drive")//used for warning invoke a message box with ok button 
+            document.write("Mission failed\n")
+        }
+        else{
+            alert("You are good to go.....")
+            document.write("Mission successfull\n")
+        }
+        let final = confirm("Are you sure you have entered the correct credentials")//confirm box appears having ok and cancel button 
+        if(final){//clicks ok then true
+            document.write("your age is of type ",(typeof(age),"and the value of age is ",age))
+        }
+        else{//clicks cancel then false this will be executed
+            document.write("Something went wrong try again...")
+        }
+        
+
+        console.log(console,"This displays all console object methods")
+        console.error("This displays the error message in red cross")
+        console.warning("This appears as an warning")
+        console.assert(5>7)//Assertions if it is false returns error,if true executes
+        //console.clear() //remove the comment clear the entire console
+        obj = {name:"saikiran",enroll_no:156,phone:"5885439589"}
+        console.table(obj)
+        console.info("log and info are same only diff both appear in info log")
+        console.time("task1")//basically u assign a label and time starts now
+        //example u can find the time taken by loops or functions to complete the tasks
+        console.timeEnd("task1")//stops the time and shows how much time taken from start of time to the ends
+    </script>
+
+</body>
+</html>

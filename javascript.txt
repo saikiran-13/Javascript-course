@@ -1,0 +1,18 @@
+Javascript can be written in 3 ways inside head or body or external file.js and link it using src inside script file
+Javascript is written into HTML web page to make it interactive and uses embedded engine in browser called javascript engine or runtime
+it has so limited properties i.e.,privacy concern
+Everything in javascript happens inside execution context
+Developers tools:
+when you click on inspect on the browser, u will find some tools like elements,console,sources,network etc..
+element:contains all the HTML Elements,what are the tags you have used basically html,css,script code and able to find the element tags by clicking the arrow
+console:contains the errors and exceptions,also all our messages are logged.
+network:This tab contains all the network requests
+lighthouse:generates the report about how fast your website is loading and what improvements can be done in your website
+If we use external script ,we have 2 benefits:
+1)Browser caching:Browser caching is a process that involves the temporary storage of resources in web browsers.
+ A visitor’s web browser downloads various website resources and stores them in the local drive.
+ The web browser will store the static web resources in a cache to improve your experience 
+ These include images, HTML files, and JavaScript files. When the user visits the website subsequently,
+the web page will load faster and the bandwidth usage will be reduced.
+2)seperation of concerns:say 5 scripts.js files one u can add highlighting code,2nd u can add playing music on website,3rd adding timer
+   next one taking care of what buttons have been cliked by user and their respective actions etc... 

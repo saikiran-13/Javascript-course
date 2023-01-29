@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>game = ['s','w','g']
+        const random_choice = (arr)=>{
+            index = Math.floor(Math.random()*arr.length)
+            return arr[index]
+        }
+    var chance = 10
+    do{
+        do
+        {
+            let store = random_choice(game)
+            console.log(store)
+            let user = prompt("choose one \n 1.Snake ->'s' \n 2.Water -> 'w' \n 3.Gun -> 'g' ")
+            if(store==user){
+                alert("Hurrah! you have won the game")
+                document.write("A big acheivement unlocked for you....")
+            }
+            else if(chance==1){
+                alert("Last chance,YOu can do it")
+            }
+            else{
+                alert("NO Match!! Try again")
+                alert(`you have ${chance} chances left ,GOOD LUCK....`)
+            }
+            chance-=1
+        let play = confirm("do you wanna play it again")
+        }while(store==user || chance==0 )
+    }while(play)
+
+        enjoy = confirm("Have you enjoyed the game?...")
+        if (enjoy){
+            document.write("Really glad for playing our game")
+        }
+        else{
+            document.write("We will do better and come back to you...")
+        }
+        </script>
+</body>
+</html>
