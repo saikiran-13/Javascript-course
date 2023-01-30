@@ -5,7 +5,7 @@ for(let i =0;i<nums.length;i++){//displaying the array
 }
 console.log()
 
-nums.forEach(element => {//another way of displaying the array elements,it takes 3 parameters (value,index,array)
+nums.forEach(element => {//another way of displaying the array elements
     console.log(element)
 });
 console.log()
