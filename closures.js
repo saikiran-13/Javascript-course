@@ -12,3 +12,7 @@ function y1(){
     var var2=100;
 }
 y1()
+
+// (function(){
+//     console.log("This is immediately invoked function expression")
+// })()
