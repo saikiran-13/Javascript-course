@@ -1,5 +1,5 @@
 let age = "45"
-console.log(typeof (age))
+console.log(typeof age)
 age = Number.parseInt(age)//type casting converting string to number
 console.log(typeof (age))
 //prompt doesnt work in node u can run this in browser console,html document etc...

@@ -57,3 +57,9 @@ console.log(arr3)
 let slice_array = arr3.slice(2,7)//creates the subarray of original array starting from the index 2 till index 6
 console.log("new slice Array is ",slice_array)
 
+let x = new Array()
+x = ['sai','kiran','parul','simform']
+function len5(string){
+    return string.length===5
+}
+console.log(x.find(len5))//find gives the first occurence match of the function definition you write inside it
