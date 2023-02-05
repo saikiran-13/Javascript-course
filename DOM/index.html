@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>                                                          
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" async></script><!--Before reading the other elements this page gets loaded cause error in console 
+    to avoid that use defer which makes parsing and loading both at the time other way write script file before the end of body-->
+        
+        <title>Document Object Model</title>
+</head>
+
+<body>
+    <header class = "container">
+        <ul class = "list">
+            <li class="list-item"><b>Home</b></li>
+            <li class="list-item"><b>Login</b></li>
+            <li class="list-item"><b>Payment</b></li>
+            <li class="list-item"><b>More</b></li>
+        </ul>
+    </header>
+        <div class = "link"><a href="#linkpage">Example</a></div>
+        <div class="content">
+            <h1>THis is a content page</h1>
+            <a href = "https://typeracer.com">typeracer.com</a>
+        </div>
+        <div class="buttoncontainer">
+            <button class="Btn">Click Here</button>
+        </div>
+    <section>
+        <h1 class="h1">FORMS</h1>
+    <form action="data.php" class = "forms">
+
+        <div>Firstname: <input type="text" name="firstname"></div><br>
+        <div>Lastname: <input type="text" name = "lastname"></div><br>
+        <div>
+            <label for="name">Middlename:
+                <input type="text" name="middlename" id="name">
+            </label>
+        </div><br>
+        <div>Password: <input type="password" name="password"></div><br>
+        <div>Gender: Male<input type='radio' name='gen'>Female<input type="radio" name="gen"></div>
+        <br><div>Expected Salary: <input type='number' name='salary'></div><br>
+        <div class = "add">
+           <span style="display: none;">Enter </span> Address:<br><textarea="address" rols="50" cols="'10"></textarea>
+        </div><br>
+        <div> <label for = "agree">Do you Agree?:</label>
+            <input type="checkbox" name="myagree" id="agree"></div>
+       
+        <label id="mycountry" style = "background-color:rgb(100,200,200)" for="country">Country:</label>
+        <select name="select your country"  id="country">
+            <option value="ind">India</option>
+            <option value="jap">Japan</option>
+            <option value="ch">China</option>
+            <option value="usa">America</option>
+        </select><br>
+        <div>
+        <input type="submit" value="Submit Now"><br>
+        <input type="Reset"  value="Reset Now"><br>
+        </div>
+        <div class = alert>
+            <button type="button" onclick="alert('Enter all data')">Click here</button>
+        </div>
+    
+    </form>
+    </section>
+<script src="./debouncingvsthrotling.js"></script>
+</body>
+
+</html>
