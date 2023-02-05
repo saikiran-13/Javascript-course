@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <p>All the best</p>
+    <link rel="stylesheet" href="./dom.css">
+    <script src="./callbacks.js" defer></script>
+    <!-- <script src = "./dom.js" defer></script> -->
+    <button class = "btn">See the Magic</button>
+</head>
+<body>
+    <h1>This is DOM</h1>
+    <p>Everything is connected</p>
+    <script>
+        let doctitle = document.title;
+        function newTitle(){
+            document.title = "come back again.."
+        }
+        function oldTitle(){
+            document.title = doctitle
+        }
+        window.onblur = newTitle;
+        window.onfocus = oldTitle;
+    </script>
+</body>
+</html>
