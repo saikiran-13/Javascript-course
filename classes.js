@@ -23,13 +23,30 @@ class human extends Family{//inheritance can be acheived by using extend keyword
     get personinfo(){//get can make your method as property u can directa access with dot no need of brackets(error)
         return "THis is used for example for getter"
     }
+    set personinfo(param){
+        return "this is ${param1}"
+    }
     persondetail(){
         console.log(`${this.extradetail}`)
     }
+
 }
 
 let Grandparent = new Family("Ravinathan",80,"balchai")
 const parent = new human("Ram krishna",45,"vadodara","Be here Be vibrant")
+
 console.log(Grandparent.personLocation())
 console.log(parent.persondetail())
 console.log(parent.personinfo)
+
+// class Car {
+//     constructor(brand) {
+//       this.carname = brand;
+//     }
+//     get cnam() {
+//       return this.carname;
+//     }
+//     set cnam(x) {
+//       this.carname = x;
+//     }
+//   }
